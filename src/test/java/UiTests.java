@@ -10,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class UiTests {
 
-    String props = System.setProperty("launch", "remote");
+    String props = System.setProperty("launch", "remote"); // если запуск через терминал, строка не нужна
     WebConfig config = ConfigFactory.create(WebConfig.class, ConfigFactory.getProperties());
 
     @BeforeEach
